@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jimmy Clark Website</title>
+    <link href="templatemo-3d-coverflow.css" rel="stylesheet">
+<!--
+
+TemplateMo 595 3d coverflow
+
+https://templatemo.com/tm-595-3d-coverflow
+
+-->
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <a href="#home" class="logo-container">
+            <div class="logo">
+                <div class="logo"></div>
+                    <defs>
+                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <rect x="10" y="25" width="15" height="50" fill="url(#grad1)" transform="rotate(-15 17.5 50)" />
+                    <rect x="35" y="15" width="15" height="70" fill="url(#grad1)" />
+                    <rect x="60" y="25" width="15" height="50" fill="url(#grad1)" transform="rotate(15 67.5 50)" />
+                    <circle cx="50" cy="50" r="45" fill="none" stroke="url(#grad1)" stroke-width="2" opacity="0.5" />
+                </svg>
+            </div>
+            <div class="logo-text">Jimmy Clark Fan Page</div>
+        </a>
+        
+        <nav class="main-menu" id="mainMenu">
+            <a href="#home" class="menu-item active">Home</a>
+            <a href="#about" class="menu-item">About</a>
+            <a href="#orders" class="menu-item" id="cartLink">Orders</a>
+            <a href="#games" class="menu-item" id="cartLink">Games</a>
+            
+            <!--<a href="#contact" class="menu-item">Contact</a>-->
+            <!--<a href="https://github.com" target="_blank" rel="noopener noreferrer" class="menu-item external">GitHub</a> -->
+        </nav>
+        
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <div class="coverflow-wrapper">
+            <div class="info">
+                <h2 id="current-title">Mountain Landscape</h2>
+                <p id="current-description">Majestic peaks covered in snow during golden hour</p>
+            </div>
+
+            <div class="coverflow-container" tabindex="0">
+                <div class="coverflow" id="coverflow">
+                    <div class="coverflow-item" data-index="0">
+                        <div class="cover image-loading">
+                            <img src="images/Vanilla-Jimmice.png" alt="Vanilla" loading="lazy">
+                        </div>
+                        <div class="reflection"></div>
+                    </div>
+                    <div class="coverflow-item" data-index="1">
+                        <div class="cover image-loading">
+                            <img src="images/Chocolate-Jimmice.png" alt="Chocolate" loading="lazy">
+                        </div>
+                        <div class="reflection"></div>
+                    </div>
+                    <div class="coverflow-item" data-index="2">
+                        <div class="cover image-loading">
+                            <img src="images/Pistachio-Jimmice.png" alt="Pistachio" loading="lazy">
+                        </div>
+                        <div class="reflection"></div>
+                    </div>
+                    <div class="coverflow-item" data-index="3">
+                        <div class="cover image-loading">
+                            <img src="images/Mango-Jimmice.png" alt="Mango" loading="lazy">
+                        </div>
+                        <div class="reflection"></div>
+                    </div>
+                    <div class="coverflow-item" data-index="4">
+                        <div class="cover image-loading">
+                            <img src="images/Strawberry-Jimmice.png" alt="Strawberry" loading="lazy">
+                        </div>
+                        <div class="reflection"></div>
+                    </div>
+                </div>
+
+                <button class="nav-button prev" onclick="navigate(-1)">‹</button>
+                <button class="nav-button next" onclick="navigate(1)">›</button>
+
+                <div class="dots-container" id="dots"></div>
+                
+                <!-- Play/Pause Button -->
+                <button class="play-pause-button" id="playPauseBtn" onclick="toggleAutoplay()">
+                    <span class="play-icon">▶</span>
+                    <span class="pause-icon" style="display: none;">❚❚</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="about-content">
+            <div class="about-header">
+                <h2>Discover Jimmy Clark Fan Page</h2>
+                <p>Fan page for Maccabi Tel Aviv guard Jimmy Clark</p>
+                <p>עמוד מעריצים לגארד מכבי תל אביב גימי קלארק</p>
+            </div>
+            
+            <div class="about-main">
+                <div class="about-visual">
+                    <div class="showcase-display">
+                        <div class="showcase-main">
+                            <div class="corner-decoration top-left"></div>
+                            <div class="corner-decoration bottom-right"></div>
+                            <div class="showcase-logo">
+                            <img src="images/Jimmy.png" alt="logo" class="logo-img">
+                            </div>
+                            
+                            <h3 class="showcase-title">Meet Jimmy</h3>
+                            <p class="showcase-subtitle">Guard #2 1.90</p>
+                            
+                            <div class="showcase-badges">
+                                <a href="https://www.instagram.com/tr3.clark/" target="_blank" rel="noopener noreferrer" class="badge">Jimmy's insagram</a>
+                                <a href="https://www.instagram.com/maccabitlv/" target="_blank" rel="noopener noreferrer" class="badge">Maccabi's insagram</a>
+                                <!--<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer" class="badge">JavaScript</a>
+                                <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design" target="_blank" rel="noopener noreferrer" class="badge">Responsive</a>
+                            --></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-info">
+                    <h3>About Jimmy & Jimmice</h3>
+                    <p>Jimmy Clark III quickly made a name for himself as a dynamic and energetic player for Maccabi Tel Aviv. Known for his exceptional speed and defensive toughness, Clark brings a relentless competitive spirit to the court. Beyond his defensive abilities, he is an explosive player who can penetrate the paint and create scoring opportunities for his teammates.</p>
+                    <p>Jimmy Clark III of Maccabi Tel Aviv not only excites fans on the field, but also brings his special energy to the culinary world with an exciting new ice cream line! The "Jimmice" ice cream collection offers a variety of classic and refreshing flavors.</p>
+                    
+                    <ul class="feature-list">
+                        <li>Fast and refreshing, just like Jimmy Leslie's bursts</li>
+                        <li>Keeps you cool and precise, even when the game is at its peak</li>
+                        <li>A surprising and sophisticated flavor, just like his assists</li>
+                        <li>Strong and powerful, just like a suffocating defense on the court</li>
+                        <li>The sweetest way to celebrate a YELLOW victory in Yad Eliyahu</li>
+                    </ul>
+                    
+                    <!--<a href="#contact" class="cta-button">
+                        Start Your Project
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M5 12h14m-7-7l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none"/>
+                        </svg>
+                    </a>-->
+                </div>
+            </div>
+            
+            <div class="stats-section">
+                <div class="stat-item">
+                    <div class="stat-number">20 Points</div>
+                    <div class="stat-label">Career High Euroleague</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">10 Assists</div>
+                    <div class="stat-label">Career High Euroleague</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">26 Points</div>
+                    <div class="stat-label">Career High Winnerleague</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">9 Steals</div>
+                    <div class="stat-label">Career High Winnerleague</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Games Section -->
+<section id="games" class="games-section">
+    <div class="container">
+        <h2 class="section-title">Next Euroleague Games</h2>
+        
+        <div class="games-grid">
+            
+            <!-- Games 1 -->
+            <div class="game-card-compact" data-date="2026-01-02">
+                <div class="card-top">
+                    <span class="game-type-badge away">Away</span>
+                    <span class="competition-tag">Euroleague</span>
+                </div>
+
+                <div class="vs-matchup">
+                    <div class="team">
+                        <img src="teams-euroleague/bayern-logo.png" alt="Opponent1">
+                    </div>
+                    <div class="vs-divider">VS</div>
+                    <div class="team">
+                        <img src="teams-euroleague/maccabi-logo.png" alt="Opponent2">
+                    </div>
+                </div>
+
+                <div class="game-info-mini">
+                    <div class="teams-names-column">
+                        <span class="team-name-small">Bayern Munich</span>
+                        <span class="vs-divider-small">VS</span>
+                        <span class="team-name-small">Maccabi Tel Aviv</span>
+                    </div>
+                <div class="location-mini">📍 SAP GARDEN</div>
+                </div>
+
+                <div class="countdown-mini">
+                    <span class="days-count">1</span> Days Left
+                </div>
+            </div>
+
+            <!-- Games 2 -->
+            <div class="game-card-compact" data-date="2026-01-06">
+                <div class="card-top">
+                    <span class="game-type-badge away">Away</span>
+                    <span class="competition-tag">Euroleague</span>
+                </div>
+
+                <div class="vs-matchup">
+                    <div class="team">
+                        <img src="teams-euroleague/barcelona.png" alt="Opponent1">
+                    </div>
+                    <div class="vs-divider">VS</div>
+                    <div class="team">
+                        <img src="teams-euroleague/maccabi-logo.png" alt="Opponent2">
+                    </div>
+                </div>
+
+                <div class="game-info-mini">
+                    <div class="teams-names-column">
+                        <span class="team-name-small">FC Barcelona</span>
+                        <span class="vs-divider-small">VS</span>
+                        <span class="team-name-small">Maccabi Tel Aviv</span>
+                    </div>
+                <div class="location-mini">📍 PALAU BLAUGRANA</div>
+                </div>
+
+                <div class="countdown-mini">
+                    <span class="days-count">5</span> Days Left
+                </div>
+            </div>
+
+            <!-- Games 3 -->
+            <div class="game-card-compact" data-date="2026-01-08">
+                <div class="card-top">
+                    <span class="game-type-badge away">Away</span>
+                    <span class="competition-tag">Euroleague</span>
+                </div>
+
+                <div class="vs-matchup">
+                    <div class="team">
+                        <img src="teams-euroleague/realmadrid-logo.png" alt="Opponent1">
+                    </div>
+                    <div class="vs-divider">VS</div>
+                    <div class="team">
+                        <img src="teams-euroleague/maccabi-logo.png" alt="Opponent2">
+                    </div>
+                </div>
+
+                <div class="game-info-mini">
+                    <div class="teams-names-column">
+                        <span class="team-name-small">Real Madrid</span>
+                        <span class="vs-divider-small">VS</span>
+                        <span class="team-name-small">Maccabi Tel Aviv</span>
+                    </div>
+                <div class="location-mini">📍 MOVISTAR ARENA</div>
+                </div>
+
+                <div class="countdown-mini">
+                    <span class="days-count">7</span> Days Left
+                </div>
+            </div>
+
+            <!-- Games 4 -->
+            <div class="game-card-compact" data-date="2026-01-15">
+                <div class="card-top">
+                    <span class="game-type-badge home">Home</span>
+                    <span class="competition-tag">Euroleague</span>
+                </div>
+
+                <div class="vs-matchup">
+                    <div class="team">
+                        <img src="teams-euroleague/maccabi-logo.png" alt="Opponent1">
+                    </div>
+                    <div class="vs-divider">VS</div>
+                    <div class="team">
+                        <img src="teams-euroleague/zalgiris-logo.png" alt="Opponent2">
+                    </div>
+                </div>
+
+                <div class="game-info-mini">
+                    <div class="teams-names-column">
+                        <span class="team-name-small">Maccabi Tel Aviv</span>
+                        <span class="vs-divider-small">VS</span>
+                        <span class="team-name-small">Zalgiris Kaunas</span>
+                    </div>
+                <div class="location-mini">📍 MENORA MIVTACHIM</div>
+                </div>
+
+                <div class="countdown-mini">
+                    <span class="days-count">14</span> Days Left
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Cart Section -->
+<section id="orders" class="section">
+    <div class="contact-content">
+        <div class="contact-header">
+            <h2>ORDER</h2>
+            <p>You can order. The stock is back!</p>
+        </div>
+        
+        <div class="contact-container">
+            <div class="contact-info-section">                    
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <img src="images/Vanilla-Jimmice.png" alt="תיאור המוצר">                        </div>
+                        <div class="contact-text">
+                            <h4>Silk Vanilla</h4>
+                            <p>The smoothest, silkest vanilla experience ever</p>
+                        </div>
+                        <button class="order-button" onclick="alert('Order for Silk Vanilla has been placed successfully! Sike Thats Not Real')">Order Now</button>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <img src= "images/Chocolate-Jimmice.png" alt="תיאור המוצר">                        </div>
+                        <div class="contact-text">
+                            <h4>Deep Choco</h4>
+                            <p>Dive into the deep, rich chocolate intensity</p>
+                        </div>
+                        <button class="order-button" onclick="alert('Order for Deep Choco has been placed successfully! Sike Thats Not Real')">Order Now</button>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <img src= "images/Pistachio-Jimmice.png" alt="תיאור המוצר">                        </div>
+                        <div class="contact-text">
+                            <h4>Pista Prime</h4>
+                            <p>Premium roasted pistachio in every bite</p>
+                        </div>
+                        <button class="order-button" onclick="alert('Order for Pista Prime has been placed successfully! Sike Thats Not Real')">Order Now</button>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <img src= "images/Mango-Jimmice.png" alt="תיאור המוצר">                        </div>
+                        <div class="contact-text">
+                            <h4>Mango Rush</h4>
+                            <p>A bold rush of tropical mango energy</p>
+                        </div>
+                        <button class="order-button" onclick="alert('Order for Mango Rush has been placed successfully! Sike Thats Not Real')">Order Now</button>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <img src= "images/Strawberry-Jimmice.png" alt="תיאור המוצר">                        </div>
+                        <div class="contact-text">
+                            <h4>Berry Blast</h4>
+                            <p>A vibrant explosion of sweet strawberry freshness</p>
+                        </div>
+                        <button class="order-button" onclick="alert('Order for Berry Blast has been placed successfully! Sike Thats Not Real')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Contact Section -->
+    <!--<section id="contact" class="section">
+        <div class="contact-content">
+            <div class="contact-header">
+                <h2>Get In Touch</h2>
+                <p>Have a project in mind? Let's create something amazing together.</p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info-section">
+                    <h3>Let's Connect</h3>
+                    <p>We're here to help bring your vision to life. Whether you need a stunning gallery, a complete website redesign, or custom development work, we'd love to hear from you.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>hello@3dcoverflow.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Phone</h4>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Address</h4>
+                                <p>123 Design Street, San Francisco, CA 94102</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Business Hours</h4>
+                                <p>Monday - Friday: 9:00 AM - 6:00 PM PST</p>
+                            </div>
+                        </div>
+                    </div>-->
+                    
+                   <!-- <div class="social-links">
+                        <h4>Follow Us</h4>
+                        <div class="social-buttons">
+                            <a href="https://www.instagram.com/jimmy_clark_fans/" class="social-btn" target="_blank" title="Instagram">
+                                <svg viewBox="0 0 24 24">
+                                     <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1112.324 0 6.162 6.162 0 01-12.324 0zM12 16a4 4 0 110-8 4 4 0 010 8zm4.965-10.405a1.44 1.44 0 112.881.001 1.44 1.44 0 01-2.881-.001z"/>
+                                </svg>
+                            </a>
+                              <a href="https://www.tiktok.com/@jimmy_clark_fans" class="social-btn" target="_blank" title="Tiktok">
+                                <svg viewBox="0 0 50 50">
+                                <path d="M38.0766847,15.8542954 C36.0693906,15.7935177 34.2504839,14.8341149 32.8791434,13.5466056 C32.1316475,12.8317108 31.540171,11.9694126 31.1415066,11.0151329 C30.7426093,10.0603874 30.5453728,9.03391952 30.5619062,8 L24.9731521,8 L24.9731521,28.8295196 C24.9731521,32.3434487 22.8773693,34.4182737 20.2765028,34.4182737 C19.6505623,34.4320127 19.0283477,34.3209362 18.4461858,34.0908659 C17.8640239,33.8612612 17.3337909,33.5175528 16.8862248,33.0797671 C16.4386588,32.6422142 16.0833071,32.1196657 15.8404292,31.5426268 C15.5977841,30.9658208 15.4727358,30.3459348 15.4727358,29.7202272 C15.4727358,29.0940539 15.5977841,28.4746337 15.8404292,27.8978277 C16.0833071,27.3207888 16.4386588,26.7980074 16.8862248,26.3604545 C17.3337909,25.9229017 17.8640239,25.5791933 18.4461858,25.3491229 C19.0283477,25.1192854 19.6505623,25.0084418 20.2765028,25.0219479 C20.7939283,25.0263724 21.3069293,25.1167239 21.794781,25.2902081 L21.794781,19.5985278 C21.2957518,19.4900128 20.7869423,19.436221 20.2765028,19.4380839 C18.2431278,19.4392483 16.2560928,20.0426009 14.5659604,21.1729264 C12.875828,22.303019 11.5587449,23.9090873 10.7814424,25.7878401 C10.003907,27.666593 9.80084889,29.7339663 10.1981162,31.7275214 C10.5953834,33.7217752 11.5748126,35.5530237 13.0129853,36.9904978 C14.4509252,38.4277391 16.2828722,39.4064696 18.277126,39.8028054 C20.2711469,40.1991413 22.3382874,39.9951517 24.2163416,39.2169177 C26.0948616,38.4384508 27.7002312,37.1209021 28.8296253,35.4300711 C29.9592522,33.7397058 30.5619062,31.7522051 30.5619062,29.7188301 L30.5619062,18.8324027 C32.7275484,20.3418321 35.3149087,21.0404263 38.0766847,21.0867664 L38.0766847,15.8542954 Z" id="Fill-1" fill="#FFFFFF"></path>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-btn" title="LinkedIn">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                </svg>
+                            </a>
+                            <a href="https://twitter.com" class="social-btn" target="_blank" title="Instagram">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1112.324 0 6.162 6.162 0 01-12.324 0zM12 16a4 4 0 110-8 4 4 0 010 8zm4.965-10.405a1.44 1.44 0 112.881.001 1.44 1.44 0 01-2.881-.001z"/>
+                                </svg>
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+                
+                <!--<div class="contact-form-section">
+                    <form class="contact-form" onsubmit="handleSubmit(event)">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>-->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-copyright">
+            © 2025 Jimmy Clark Fan Page. All rights reserved.
+        </div>
+        <div class="footer-links">
+            <a href="#privacy" onclick="event.preventDefault(); alert('This site is not used as a real product...');">Privacy Policy</a>
+            <a href="#terms" onclick="event.preventDefault(); alert('Yalla Maccabi');">Terms of Service</a>
+            
+            <div class="social-wrapper">
+                <a href="https://www.instagram.com/jimmy_clark_fans/" class="social-btn instagram" target="_blank" title="Instagram">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1112.324 0 6.162 6.162 0 01-12.324 0zM12 16a4 4 0 110-8 4 4 0 010 8zm4.965-10.405a1.44 1.44 0 112.881.001 1.44 1.44 0 01-2.881-.001z"/>
+                    </svg>
+                </a>
+                <a href="https://www.tiktok.com/@jimmy_clark_fans" class="social-btn tiktok" target="_blank" title="TikTok">
+                    <svg viewBox="0 0 50 50">
+                        <path d="M38.0766847,15.8542954 C36.0693906,15.7935177 34.2504839,14.8341149 32.8791434,13.5466056 C32.1316475,12.8317108 31.540171,11.9694126 31.1415066,11.0151329 C30.7426093,10.0603874 30.5453728,9.03391952 30.5619062,8 L24.9731521,8 L24.9731521,28.8295196 C24.9731521,32.3434487 22.8773693,34.4182737 20.2765028,34.4182737 C19.6505623,34.4320127 19.0283477,34.3209362 18.4461858,34.0908659 C17.8640239,33.8612612 17.3337909,33.5175528 16.8862248,33.0797671 C16.4386588,32.6422142 16.0833071,32.1196657 15.8404292,31.5426268 C15.5977841,30.9658208 15.4727358,30.3459348 15.4727358,29.7202272 C15.4727358,29.0940539 15.5977841,28.4746337 15.8404292,27.8978277 C16.0833071,27.3207888 16.4386588,26.7980074 16.8862248,26.3604545 C17.3337909,25.9229017 17.8640239,25.5791933 18.4461858,25.3491229 C19.0283477,25.1192854 19.6505623,25.0084418 20.2765028,25.0219479 C20.7939283,25.0263724 21.3069293,25.1167239 21.794781,25.2902081 L21.794781,19.5985278 C21.2957518,19.4900128 20.7869423,19.436221 20.2765028,19.4380839 C18.2431278,19.4392483 16.2560928,20.0426009 14.5659604,21.1729264 C12.875828,22.303019 11.5587449,23.9090873 10.7814424,25.7878401 C10.003907,27.666593 9.80084889,29.7339663 10.1981162,31.7275214 C10.5953834,33.7217752 11.5748126,35.5530237 13.0129853,36.9904978 C14.4509252,38.4277391 16.2828722,39.4064696 18.277126,39.8028054 C20.2711469,40.1991413 22.3382874,39.9951517 24.2163416,39.2169177 C26.0948616,38.4384508 27.7002312,37.1209021 28.8296253,35.4300711 C29.9592522,33.7397058 30.5619062,31.7522051 30.5619062,29.7188301 L30.5619062,18.8324027 C32.7275484,20.3418321 35.3149087,21.0404263 38.0766847,21.0867664 L38.0766847,15.8542954 Z" fill="#FFFFFF"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- Scroll to top button -->
+    <div class="scroll-to-top" id="scrollToTop">
+        <span>↑</span>
+    </div>
+
+<script src="templatemo-3d-coverflow-scripts.js"></script>
+
+</body>
+</html>
